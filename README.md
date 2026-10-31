@@ -158,7 +158,7 @@ pip install -r requirements.txt
 | **Week 2 – Phase 8** | Exploratory Data Profiling & Diagnostic Metrics | **COMPLETED** |
 | **Week 2 – Phase 9** | Data Sanitation, Type Coercion & Duplicate Handling | **COMPLETED** |
 | **Week 2 – Phase 10** | Missing Value Diagnostics & Statistical Imputation | **COMPLETED** |
-| **Week 2 – Phase 11** | Statistical Outlier Detection (IQR / Z-Score) & Treatment | Upcoming |
+| **Week 2 – Phase 11** | Statistical Outlier Detection (IQR / Z-Score) & Treatment | **COMPLETED** |
 | **Week 2 – Phase 12** | Feature Scaling (Min-Max Scaling & Standardization) | Upcoming |
 | **Week 2 – Phase 13** | Reusable Automated Preprocessing Pipeline (`src/`) | Upcoming |
 | **Week 2 Report** | Word Document Generation (`Week2_Data_Preprocessing_Report.docx`) | Upcoming |
@@ -171,6 +171,7 @@ pip install -r requirements.txt
 * **Week 2 Dataset Collection Report:** `documentation/Week2_Dataset_Collection_Report.docx`
 * **Week 2 Data Cleaning Report:** `documentation/Week2_Data_Cleaning_Report.docx`
 * **Week 2 Missing Value Analysis Report:** `documentation/Week2_Missing_Value_Analysis_Report.docx`
+* **Week 2 Outlier Detection Report:** `documentation/Week2_Outlier_Detection_Report.docx`
 * **Week 2 Preprocessing & Pipeline Document:** `documentation/Week2_Data_Preprocessing_Report.docx`
 * **Final Consolidated Project Report:** `documentation/Combined_Project_Report.docx`
 * **Cleaned & Processed Dataset:** `dataset/processed/`

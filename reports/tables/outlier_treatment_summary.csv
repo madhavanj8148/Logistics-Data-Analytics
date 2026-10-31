@@ -1,0 +1,6 @@
+Feature,IQR Outliers,Z Outliers,Data Corruption,Strategy,Records Retained,Domain Feasibility
+distance_km,0,0,0,Preserved Without Alteration,25000,Valid intra-state haul envelope [3.6 to 297.1 km]
+package_weight_kg,0,0,0,Preserved Without Alteration,25000,Valid commercial freight parcel range [0.67 to 49.52 kg]
+expected_time_hours,0,0,0,Preserved Without Alteration,25000,Realistic SLA durations [0.35 to 9.99 hours]
+delivery_cost,0,0,0,Preserved Without Alteration,25000,Standard 3PL tariff matrix [95.67 to 1632.72 INR]
+delivery_rating (Discrete),0,0,0,Preserved Intact (Scale Protection),25000,Strict integer rating domain [1 to 5 stars]

@@ -1,0 +1,6 @@
+Feature,Min,Max,Skewness,Excess Kurtosis,IQR,IQR Fences,IQR Outliers,3-Sigma Bounds,Z Outliers (|Z|>3)
+distance_km,3.6,297.1,0.0019,-1.1962,149.0,"[-147.6, 448.4]",0,"[-108.8, 409.6]",0
+package_weight_kg,0.67,49.52,-0.0026,-1.1995,24.98,"[-24.8, 75.1]",0,"[-18.0, 68.3]",0
+expected_time_hours,0.35,9.99,0.0087,-1.1881,4.7,"[-3.8, 15.0]",0,"[-2.5, 13.5]",0
+delivery_cost,95.67,1632.72,0.0011,-1.172,747.11,"[-629.9, 2358.6]",0,"[-442.2, 2172.1]",0
+delivery_rating (Discrete Ordinal),1.0,5.0,-0.4731,-0.7388,2.0,"[0.0, 8.0]",0,"[0.2, 7.1]",0
