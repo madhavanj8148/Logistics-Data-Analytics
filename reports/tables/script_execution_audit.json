@@ -1,0 +1,62 @@
+[
+  {
+    "script": "src/data_collection.py",
+    "status": "PASS",
+    "returncode": 0,
+    "duration_sec": 5.3,
+    "stdout_len": 2084,
+    "stderr_len": 0,
+    "stderr": "",
+    "stdout_sample": "======================================================================\nLOGISTICS DATA ANALYTICS: DATASET COLLECTION & VERIFICATION\n======================================================================\nLoading raw dataset from: C:\\Users\\madha\\OneDrive\\Documents\\04.Projects\\Logistics Data Analyst Int"
+  },
+  {
+    "script": "src/data_cleaning.py",
+    "status": "PASS",
+    "returncode": 0,
+    "duration_sec": 9.71,
+    "stdout_len": 2710,
+    "stderr_len": 0,
+    "stderr": "",
+    "stdout_sample": "======================================================================\nLOGISTICS DATA ANALYTICS: WEEK 2 - STEP 3 DATA CLEANING\n======================================================================\n======================================================================\nLOGISTICS DATA ANALYTICS: DATAS"
+  },
+  {
+    "script": "src/missing_values.py",
+    "status": "PASS",
+    "returncode": 0,
+    "duration_sec": 9.24,
+    "stdout_len": 2900,
+    "stderr_len": 0,
+    "stderr": "",
+    "stdout_sample": "======================================================================\nLOGISTICS DATA ANALYTICS: WEEK 2 - STEP 4 MISSING VALUE HANDLING\n======================================================================\n======================================================================\nLOGISTICS DATA ANALYTI"
+  },
+  {
+    "script": "src/outlier_detection.py",
+    "status": "PASS",
+    "returncode": 0,
+    "duration_sec": 12.64,
+    "stdout_len": 3488,
+    "stderr_len": 0,
+    "stderr": "",
+    "stdout_sample": "======================================================================\nLOGISTICS DATA ANALYTICS: WEEK 2 - STEP 5 OUTLIER DETECTION & TREATMENT\n======================================================================\n======================================================================\nLOGISTICS DATA "
+  },
+  {
+    "script": "src/normalization.py",
+    "status": "PASS",
+    "returncode": 0,
+    "duration_sec": 14.13,
+    "stdout_len": 3447,
+    "stderr_len": 0,
+    "stderr": "",
+    "stdout_sample": "======================================================================\nLOGISTICS DATA ANALYTICS: WEEK 2 - STEP 6 DATA NORMALIZATION & SCALING\n======================================================================\n======================================================================\nLOGISTICS DATA A"
+  },
+  {
+    "script": "src/preprocessing_pipeline.py",
+    "status": "PASS",
+    "returncode": 0,
+    "duration_sec": 11.2,
+    "stdout_len": 3377,
+    "stderr_len": 0,
+    "stderr": "",
+    "stdout_sample": "======================================================================\nLOGISTICS DATA ANALYTICS: UNIFIED PREPROCESSING PIPELINE EXECUTION\n======================================================================\n\n======================================================================\nSTAGE 1: RAW DATASE"
+  }
+]

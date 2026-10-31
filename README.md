@@ -159,9 +159,12 @@ pip install -r requirements.txt
 | **Week 2 – Phase 9** | Data Sanitation, Type Coercion & Duplicate Handling | **COMPLETED** |
 | **Week 2 – Phase 10** | Missing Value Diagnostics & Statistical Imputation | **COMPLETED** |
 | **Week 2 – Phase 11** | Statistical Outlier Detection (IQR / Z-Score) & Treatment | **COMPLETED** |
-| **Week 2 – Phase 12** | Feature Scaling (Min-Max Scaling & Standardization) | Upcoming |
-| **Week 2 – Phase 13** | Reusable Automated Preprocessing Pipeline (`src/`) | Upcoming |
-| **Week 2 Report** | Word Document Generation (`Week2_Data_Preprocessing_Report.docx`) | Upcoming |
+| **Week 2 – Phase 12** | Feature Scaling (Min-Max Scaling & Standardization) | **COMPLETED** |
+| **Week 2 – Phase 13** | Reusable Automated Preprocessing Pipeline (`src/`) | **COMPLETED** |
+| **Week 2 – Phase 14** | Final Data Quality Scorecard, Business Rules & Leakage Audit | **COMPLETED** |
+| **Week 2 Report** | Word Document Generation (`Week2_Final_Complete_Report.docx`) | **COMPLETED** |
+| **Week 2 Audit** | Master QA & Verification Report (`Week2_Complete_Project_Audit_Report.docx`) | **COMPLETED** |
+| **Week 2 Readiness**| Final Data Readiness Report (`Week2_Final_Data_Readiness_Report.docx`) | **COMPLETED** |
 | **Final Delivery** | Combined Academic & Industry Documentation (`Combined_Project_Report.docx`) | Upcoming |
 
 ---
@@ -172,9 +175,18 @@ pip install -r requirements.txt
 * **Week 2 Data Cleaning Report:** `documentation/Week2_Data_Cleaning_Report.docx`
 * **Week 2 Missing Value Analysis Report:** `documentation/Week2_Missing_Value_Analysis_Report.docx`
 * **Week 2 Outlier Detection Report:** `documentation/Week2_Outlier_Detection_Report.docx`
-* **Week 2 Preprocessing & Pipeline Document:** `documentation/Week2_Data_Preprocessing_Report.docx`
+* **Week 2 Data Normalization Report:** `documentation/Week2_Data_Normalization_Report.docx`
+* **Week 2 Complete Preprocessing Pipeline Report:** `documentation/Week2_Complete_Preprocessing_Pipeline_Report.docx`
+* **Week 2 Master Submission Report:** `documentation/Week2_Final_Submission_Report.docx`
+* **Week 2 Requirement Mapping Matrix:** `documentation/Week2_Assignment_Requirement_Mapping.csv`
+* **Week 2 Final Report Generation Summary:** `documentation/Week2_Final_Report_Generation_Summary.md`
+* **Week 2 Final Data Readiness Report:** `documentation/Week2_Final_Data_Readiness_Report.docx`
+* **Week 2 Master Audit Report:** `documentation/Week2_Complete_Project_Audit_Report.docx`
+* **Week 2 Final Technical Correction Log:** `documentation/Week2_Final_Correction_Log.docx`
+* **Week 2 Final Complete Report:** `documentation/Week2_Final_Complete_Report.docx`
 * **Final Consolidated Project Report:** `documentation/Combined_Project_Report.docx`
 * **Cleaned & Processed Dataset:** `dataset/processed/`
+* **Quality Scorecards & Validation Tables:** `reports/tables/`
 * **Charts & Visualizations:** `reports/charts/`
 
 ---

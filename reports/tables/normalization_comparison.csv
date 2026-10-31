@@ -1,0 +1,13 @@
+Feature,Transformation,Min,Max,Mean,Std Dev,Skewness,Excess Kurtosis,Mathematical Domain,Logistics Interpretation
+distance_km,Original Raw,3.6,297.1,150.3904,86.4097,0.0019,-1.1962,"[3.60, 297.10]","Physical engineering units (km, kg, hrs, INR)"
+distance_km,Min-Max Scaled,0.0,1.0,0.5001,0.2944,0.0019,-1.1962,"[0.0000, 1.0000]",Normalized relative operational intensity (0% to 100%)
+distance_km,Standardized (Z-Score),-1.6988,1.6979,0.0,1.0,0.0019,-1.1962,"[-1.70, 1.70]",Standard deviation deviations from network fleet average
+package_weight_kg,Original Raw,0.67,49.52,25.1459,14.3687,-0.0026,-1.1995,"[0.67, 49.52]","Physical engineering units (km, kg, hrs, INR)"
+package_weight_kg,Min-Max Scaled,0.0,1.0,0.501,0.2941,-0.0026,-1.1995,"[0.0000, 1.0000]",Normalized relative operational intensity (0% to 100%)
+package_weight_kg,Standardized (Z-Score),-1.7035,1.6964,0.0,1.0,-0.0026,-1.1995,"[-1.70, 1.70]",Standard deviation deviations from network fleet average
+expected_time_hours,Original Raw,0.35,9.99,5.5217,2.6692,0.0087,-1.1881,"[0.35, 9.99]","Physical engineering units (km, kg, hrs, INR)"
+expected_time_hours,Min-Max Scaled,0.0,1.0,0.5365,0.2769,0.0087,-1.1881,"[0.0000, 1.0000]",Normalized relative operational intensity (0% to 100%)
+expected_time_hours,Standardized (Z-Score),-1.9376,1.6741,0.0,1.0,0.0087,-1.1881,"[-1.94, 1.67]",Standard deviation deviations from network fleet average
+delivery_cost,Original Raw,95.6674,1632.7206,864.9446,435.7126,0.0011,-1.172,"[95.67, 1632.72]","Physical engineering units (km, kg, hrs, INR)"
+delivery_cost,Min-Max Scaled,0.0,1.0,0.5005,0.2835,0.0011,-1.172,"[0.0000, 1.0000]",Normalized relative operational intensity (0% to 100%)
+delivery_cost,Standardized (Z-Score),-1.7656,1.7622,-0.0,1.0,0.0011,-1.172,"[-1.77, 1.76]",Standard deviation deviations from network fleet average

@@ -1,0 +1,11 @@
+Comparison Dimension,Raw Excel Dataset,Cleaned Processed Dataset,Transformation Applied,Variance / Status
+Total Record Count,"25,000 records","25,000 records",None (Zero sample deletion policy),0 variance (100% preservation) [PASS]
+Total Feature Count,15 columns,15 columns,Preserved full feature space intact,0 variance (15/15 columns present) [PASS]
+Header Standardization,Mixed casing ('traffic_Level'),Uniform snake_case ('traffic_level'),Lowercased and standardized to 'traffic_level',Resolved syntax break hazard [PASS]
+Missing / Null Cells,0 missing cells (0.00%),0 missing cells (0.00%),Verified complete empirical coverage,"0 nulls across 375,000 data points [PASS]"
+Exact Duplicate Records,0 duplicate rows,0 duplicate rows,Full-row hashing verification,Zero identical rows exist [PASS]
+Repeated Identifier Handling,249 repeated delivery_id instances,249 repeated delivery_id instances,Discovered shared batch intake ID (24750.01); retained,Prevented 1% operational sample loss [PASS]
+String Whitespace Hygiene,Potential trailing/leading whitespace,Strictly stripped and normalized,str.strip() applied across all categorical features,Eliminated whitespace category splits [PASS]
+Continuous Numerical Bounds,"distance: [1.0, 297.1], weight: [0.11, 49.52]","distance: [1.0, 297.1], weight: [0.11, 49.52]",Verified domain bounds; no invalid pruning,100% physically valid bounds retained [PASS]
+Delivery Rating Range,Discrete integers [1..5 stars],Discrete integers [1..5 stars],Type casting to int64; scale preserved,Discrete Likert semantics preserved [PASS]
+Target Distribution (delayed),"no: 18,331 (73.32%), yes: 6,669 (26.68%)","no: 18,331 (73.32%), yes: 6,669 (26.68%)",Strictly isolated and untouched,"0 mismatches across all 25,000 rows [PASS]"

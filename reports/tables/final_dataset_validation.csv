@@ -1,0 +1,4 @@
+Exported File Name,File Size (MB),Pandas Load Status,Dimensions Verified,Valid Column Names,Unexpected Null Count,delivery_id Match,delayed Target Match,Overall Verification
+cleaned_logistics_dataset.csv,2.38,PASS (Load Successful),"25000 x 15 (Expected 25,000 x 15) [PASS]",15 columns confirmed [PASS],0 nulls (0.00%) [PASS],"25,000 / 25,000 matching rows [PASS]","25,000 / 25,000 matching rows [PASS]",PASS
+minmax_scaled_logistics_dataset.csv,3.64,PASS (Load Successful),"25000 x 15 (Expected 25,000 x 15) [PASS]",15 columns confirmed [PASS],0 nulls (0.00%) [PASS],"25,000 / 25,000 matching rows [PASS]","25,000 / 25,000 matching rows [PASS]",PASS
+standardized_logistics_dataset.csv,3.68,PASS (Load Successful),"25000 x 15 (Expected 25,000 x 15) [PASS]",15 columns confirmed [PASS],0 nulls (0.00%) [PASS],"25,000 / 25,000 matching rows [PASS]","25,000 / 25,000 matching rows [PASS]",PASS

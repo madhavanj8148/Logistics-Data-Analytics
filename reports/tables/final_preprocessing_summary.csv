@@ -1,0 +1,7 @@
+Stage,Stage Name,Input Records,Output Records,Records Retained (%),Primary Action,Validation Status,Methodological Notes
+1,Data Ingestion & Verification,25000,25000,100.0,Loaded original Excel dataset from dataset/raw/,PASSED,"Verified exact dimensions (25,000 rows x 15 columns); source workbook untouched."
+2,Data Cleaning & Sanitation,25000,25000,100.0,"Stripped whitespace, lowercased categories, standardized column headers",PASSED,Exact duplicates: 0. Validated 249 repeated IDs as legitimate separate consignments.
+3,Missing Value Handling,25000,25000,100.0,Audited missingness across all 15 features; applied empirical preservation protocol,PASSED,Zero missing cells detected (100% observational density); no artificial values injected.
+4,Outlier Analysis & Preservation,25000,25000,100.0,Evaluated IQR (1.5x) and Z-Score (|Z|>3.0) boundaries; confirmed platykurtic distribution bounds,PASSED,Zero statistical outliers detected; kurtosis approx -1.20 (theoretical uniform value); all valid operations retained.
+5,Feature Scaling & Normalization,25000,25000,100.0,"Generated Min-Max ([0, 1]) and Z-Score (N(0, 1)) transformed datasets",PASSED,"Scaled distance_km, package_weight_kg, expected_time_hours, delivery_cost. Preserved ID, target, and rating."
+6,Pipeline Export & Validation,25000,25000,100.0,"Serialized cleaned, min-max, and standardized datasets to dataset/processed/",PASSED,All output CSVs generated and certified intact.

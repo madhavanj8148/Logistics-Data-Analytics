@@ -1,0 +1,9 @@
+Rule ID,Attribute,Business Rule Condition,Observed Min,Observed Max,Invalid Record Count,Invalid Percentage,Action / Outcome,Rule Status
+BR-01,distance_km,distance_km > 0.0,3.6,297.1,0,0.00%,No invalid records detected; 100% retained,PASS
+BR-02,package_weight_kg,package_weight_kg > 0.0,0.67,49.52,0,0.00%,No invalid records detected; 100% retained,PASS
+BR-03,expected_time_hours,expected_time_hours > 0.0,0.35,9.99,0,0.00%,No invalid records detected; 100% retained,PASS
+BR-04,delivery_cost,delivery_cost > 0.0,95.6674,1632.72059999999,0,0.00%,No invalid records detected; 100% retained,PASS
+BR-05,delivery_rating,"delivery_rating in [1, 2, 3, 4, 5]",1,5,0,0.00%,"Valid Likert scale; distinct values: {1, 2, 3, 4, 5}",PASS
+BR-06,delayed,"delayed in ['yes', 'no']",no,yes,0,0.00%,"Binary target verified: 'no'=18,331, 'yes'=6,669",PASS
+BR-07,traffic_level,"traffic_level in ['low', 'medium', 'high', 'jam']",high,medium,0,0.00%,Standard categories verified; 0 unstandardized strings,PASS
+BR-08,delivery_status,"delivery_status in ['delivered', 'delayed', 'failed']",delayed,failed,0,0.00%,"Post-event states verified; delivered=18,331, delayed=5,341, failed=1,328",PASS

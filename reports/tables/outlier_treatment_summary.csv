@@ -1,6 +1,6 @@
-Feature,IQR Outliers,Z Outliers,Data Corruption,Strategy,Records Retained,Domain Feasibility
-distance_km,0,0,0,Preserved Without Alteration,25000,Valid intra-state haul envelope [3.6 to 297.1 km]
-package_weight_kg,0,0,0,Preserved Without Alteration,25000,Valid commercial freight parcel range [0.67 to 49.52 kg]
-expected_time_hours,0,0,0,Preserved Without Alteration,25000,Realistic SLA durations [0.35 to 9.99 hours]
-delivery_cost,0,0,0,Preserved Without Alteration,25000,Standard 3PL tariff matrix [95.67 to 1632.72 INR]
-delivery_rating (Discrete),0,0,0,Preserved Intact (Scale Protection),25000,Strict integer rating domain [1 to 5 stars]
+Feature,Identified Outliers (IQR),Identified Outliers (Z-Score),Data Entry Errors,Domain Plausibility Assessment,Treatment Strategy,Operational Action,Original Min,Original Max,Post-Treatment Min,Post-Treatment Max,Total Records Retained,Justification & Rationale
+distance_km,0,0,0,Physically plausible logistics parameter,Preserved Without Alteration,Retain All Observations (Zero Corruption Detected),3.6,297.1,3.6,297.1,25000,"Feature values span [3.60, 297.10], strictly within realistic logistics operational boundaries. Zero observations exceed Tukey's fences or 3-sigma thresholds."
+package_weight_kg,0,0,0,Physically plausible logistics parameter,Preserved Without Alteration,Retain All Observations (Zero Corruption Detected),0.67,49.52,0.67,49.52,25000,"Feature values span [0.67, 49.52], strictly within realistic logistics operational boundaries. Zero observations exceed Tukey's fences or 3-sigma thresholds."
+expected_time_hours,0,0,0,Physically plausible logistics parameter,Preserved Without Alteration,Retain All Observations (Zero Corruption Detected),0.35,9.99,0.35,9.99,25000,"Feature values span [0.35, 9.99], strictly within realistic logistics operational boundaries. Zero observations exceed Tukey's fences or 3-sigma thresholds."
+delivery_cost,0,0,0,Physically plausible logistics parameter,Preserved Without Alteration,Retain All Observations (Zero Corruption Detected),95.6674,1632.7206,95.6674,1632.7206,25000,"Feature values span [95.67, 1632.72], strictly within realistic logistics operational boundaries. Zero observations exceed Tukey's fences or 3-sigma thresholds."
+delivery_rating (Discrete Ordinal),0,0,0,Customer satisfaction rating on 1-5 integer scale,Preserved Intact (Discrete Scale Protection),No Modification (Integer Domain Adherence),1.0,5.0,1.0,5.0,25000,Discrete ordinal rating scale [1..5] must not be treated as unconstrained continuous measure.

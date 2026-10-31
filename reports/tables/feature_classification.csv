@@ -1,0 +1,16 @@
+Column Name,Statistical Data Type,Pandas Data Type,Feature Classification,Operational Role,Inclusion in Delay Prediction,Description & Valid Domain
+delivery_id,Numeric (Discrete ID),float64,Primary Identifier,Relational Key & Tracking,EXCLUDED (Prevents spurious overfitting on IDs),Unique consignment tracking identifier [1.0 to 25000.0]
+delivery_partner,Categorical (Nominal),string / object,Categorical Predictor,Carrier Service Attribution,INCLUDED (One-Hot Encoded in Week 3),"9 3PL logistics carriers (Delhivery, BlueDart, DTDC, etc.)"
+package_type,Categorical (Nominal),string / object,Categorical Predictor,Cargo Handling Complexity,INCLUDED (One-Hot Encoded in Week 3),"Packaging format (Electronics, Apparel, Fragile, etc.)"
+vehicle_type,Categorical (Nominal),string / object,Categorical Predictor,Fleet Modality & Speed Envelope,INCLUDED (One-Hot Encoded in Week 3),"Transit vehicle modality (Bike, Van, Truck, Electric Scooter)"
+delivery_mode,Categorical (Nominal),string / object,Categorical Predictor,Service Tier Priority & SLA,INCLUDED (One-Hot Encoded in Week 3),"Delivery priority class (Standard, Express, Same-Day)"
+region,Categorical (Nominal),string / object,Categorical Predictor,Geographic Hub & Route Context,INCLUDED (One-Hot Encoded in Week 3),"Operational region in India (North, South, East, West, Central)"
+weather_condition,Categorical (Nominal),string / object,Categorical Predictor,Environmental Road Impedance,INCLUDED (One-Hot Encoded in Week 3),"Atmospheric dispatch condition (Clear, Rainy, Foggy, Stormy)"
+traffic_level,Categorical (Ordinal),string / object,Ordinal Predictor,Transit Congestion Barrier,"INCLUDED (Ordinal Encoded in Week 3: 0, 1, 2, 3)",Route congestion density (low < medium < high < jam)
+distance_km,Continuous Numerical,float64,Continuous Numerical Predictor,Spatial Transit Distance,INCLUDED (Scaled via Min-Max or StandardScaler),Haul distance in kilometers [1.0 to 297.1 km]
+package_weight_kg,Continuous Numerical,float64,Continuous Numerical Predictor,Physical Consignment Mass,INCLUDED (Scaled via Min-Max or StandardScaler),Parcel weight in kilograms [0.11 to 49.52 kg]
+expected_time_hours,Continuous Numerical,float64,Continuous Numerical Predictor,Scheduled Dispatch-to-Delivery SLA,INCLUDED (Scaled via Min-Max or StandardScaler),Estimated transit duration SLA in hours [0.50 to 15.00 hrs]
+delivery_cost,Continuous Numerical,float64,Continuous Numerical Predictor,Economic Freight Tariff,INCLUDED (Scaled via Min-Max or StandardScaler),"Billed freight expenditure in INR [40.00 to 1,632.72 INR]"
+delivery_rating,Discrete Ordinal,int64,Post-Delivery Outcome Variable,Customer Satisfaction Metric,EXCLUDED (Post-event data leakage; recorded after delivery),"Customer feedback Likert score [1, 2, 3, 4, 5 stars]"
+delivery_status,Categorical (Nominal),string / object,Post-Delivery Outcome Variable,Operational Final Disposition,EXCLUDED (Deterministic target leakage; 100% proxy for delayed),"Post-transit execution disposition (delivered, delayed, failed)"
+delayed,Categorical (Binary),string / object,Supervised Target Variable,Classification Objective,"TARGET VARIABLE Y (Binary encoded: no=0, yes=1)","Primary outcome to forecast before dispatch (no=73.3%, yes=26.7%)"
