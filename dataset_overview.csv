@@ -1,0 +1,26 @@
+Attribute,Value
+Project Title,Logistics Performance Analysis and Delivery Delay Prediction
+Dataset File Name,Delivery Logistics Dataset (India – Multi-Partner).xlsx
+File Size (KB),2359.68 KB
+Domain / Industry,Supply Chain Logistics & Transportation Operations
+Geographic Scope,"India (Multi-Regional: North, South, East, West, Central)"
+Total Record Count (Rows),"25,000"
+Total Feature Count (Columns),15
+Total Missing Values (Cells),0
+Exact Duplicate Rows,0
+Unique Delivery IDs,"24,751"
+Repeated Delivery IDs,249 (Requires Week 2 investigation)
+Total Logistics Partners,"9 (delhivery, xpressbees, shadowfax, dhl, amazon logistics...)"
+Total Vehicle Types,"6 (bike, ev van, truck, van, ev bike, scooter)"
+Total Delivery Modes,"4 (same day, express, two day, standard)"
+Total Package Categories,"9 (automobile parts, cosmetics, groceries, electronics, clothing...)"
+Weather Condition Categories,"6 (clear, cold, rainy, foggy, hot, stormy)"
+Traffic Levels,"3 (High, Medium, Low)"
+Target Variable,delayed (Binary: yes / no)
+Target Distribution (No Delays),"18,331 (73.32%)"
+Target Distribution (Delays),"6,669 (26.68%)"
+Distance Range (km),3.6 km to 297.1 km (Mean: 150.39 km)
+Package Weight Range (kg),0.67 kg to 49.52 kg (Mean: 25.15 kg)
+Expected Transit Time Range,0.35 hrs to 9.99 hrs (Mean: 5.52 hrs)
+Delivery Cost Range (INR),INR 95.67 to INR 1632.72 (Mean: INR 864.94)
+Customer Rating Range,1 to 5 (Mean: 3.67 / 5.0)

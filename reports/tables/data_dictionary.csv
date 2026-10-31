@@ -1,0 +1,16 @@
+Column Name,Data Type,Non-Null Count,Null Count,Unique Count,Range / Categories,Business Definition,Operational Role
+delivery_id,float64,25000,0,24751,"Min: 1.00, Max: 24750.01",Unique operational identifier assigned to each shipment transaction.,Primary Identifier (Exclude from predictive ML feature sets)
+delivery_partner,object (string),25000,0,9,"delhivery, xpressbees, shadowfax, dhl, amazon logistics, blue dart, fedex, ecom express, ekart",Third-party logistics carrier managing the parcel dispatch and fulfillment.,Categorical Feature (Benchmark partner operational SLA)
+package_type,object (string),25000,0,9,"automobile parts, cosmetics, groceries, electronics, clothing, documents, fragile items, pharmacy, furniture",Product commodity classification of the delivered merchandise.,Categorical Feature (Evaluate handling constraints and latency)
+vehicle_type,object (string),25000,0,6,"bike, ev van, truck, van, ev bike, scooter","Fleet modality utilized for the delivery route (bike, van, truck, EV).",Categorical Feature (Fleet assignment and capacity modeling)
+delivery_mode,object (string),25000,0,4,"same day, express, two day, standard","Service tier SLA requested by customer (same day, express, two day, standard).",Categorical Feature (SLA benchmark and prioritization)
+region,object (string),25000,0,5,"west, central, east, north, south",Geographical territory in India where the fulfillment took place.,Categorical Feature (Regional logistics disparity analysis)
+weather_condition,object (string),25000,0,6,"clear, cold, rainy, foggy, hot, stormy",Ambient weather condition recorded during the shipment route.,Categorical Feature (Environmental vulnerability modeling)
+distance_km,float64,25000,0,2935,"Min: 3.6 km, Max: 297.1 km, Mean: 150.39 km",Total road distance in kilometers between fulfillment center and customer address.,Numerical Feature (Primary route distance metric)
+package_weight_kg,float64,25000,0,4853,"Min: 0.67 kg, Max: 49.52 kg, Mean: 25.15 kg",Physical gross weight of the package in kilograms.,Numerical Feature (Vehicle payload and handling factor)
+expected_time_hours,float64,25000,0,965,"Min: 0.35 hrs, Max: 9.99 hrs, Mean: 5.52 hrs",Estimated planned delivery duration in hours communicated to the customer.,Numerical Feature (Planned transit baseline; not actual duration)
+delayed,object (string),25000,0,2,"no: 18,331 (73.32%), yes: 6,669 (26.68%)",Ground-truth binary delay indicator provided in the shipment ledger.,Target Variable (Supervised classification objective)
+delivery_status,object (string),25000,0,3,"delivered, delayed, failed","Final recorded delivery outcome (delivered, delayed, failed).",Target Leakage Candidate (MUST be excluded from features at dispatch time)
+delivery_rating,int64,25000,0,5,"Min: 1, Max: 5, Mean: 3.67",Customer post-delivery satisfaction score recorded on a discrete 1 to 5 scale.,Evaluation KPI / Customer Experience Metric
+delivery_cost,float64,25000,0,22670,"Min: INR 95.67, Max: INR 1632.72, Mean: INR 864.94",Total operational cost charged or incurred for the delivery trip in INR.,Numerical Feature / Financial KPI
+traffic_Level,object (string),25000,0,3,"High, Medium, Low",Road congestion condition observed along the primary route segment.,Categorical Feature (Dynamic urban bottleneck indicator)
