@@ -1,0 +1,16 @@
+Column Name,Data Type,Total Rows,Missing Count,Missing Percentage (%),Completeness (%),Recommended Imputation Method,Theoretical Justification
+delivery_id,float64,25000,0,0.0,100.0,None (Primary Key),Identifiers must never be imputed; drop or re-index if missing
+delivery_partner,str,25000,0,0.0,100.0,Mode (Most Frequent),Categorical nominal; impute with modal carrier or 'unknown'
+package_type,str,25000,0,0.0,100.0,Mode (Most Frequent),Categorical nominal; impute with modal commodity type
+vehicle_type,str,25000,0,0.0,100.0,Mode / Modal Fleet,Categorical nominal; impute with modal vehicle modality
+delivery_mode,str,25000,0,0.0,100.0,Mode (Service SLA),Categorical ordinal/nominal; impute with standard default SLA
+region,str,25000,0,0.0,100.0,Mode (Geographic),Categorical nominal; impute with central hub or modal territory
+weather_condition,str,25000,0,0.0,100.0,Mode (Environmental),Categorical nominal; impute with modal state ('clear')
+distance_km,float64,25000,0,0.0,100.0,Median Imputation,Continuous numeric; median is robust against extreme haul distances
+package_weight_kg,float64,25000,0,0.0,100.0,Median Imputation,Continuous numeric; median protects against heavy freight outliers
+expected_time_hours,float64,25000,0,0.0,100.0,Median Imputation,Continuous numeric; median avoids skewness from transit delays
+delayed,str,25000,0,0.0,100.0,Supervised / Never Impute,Primary target variable; records with missing target must be dropped
+delivery_status,str,25000,0,0.0,100.0,Mode (Operational),Lifecycle outcome; impute with modal operational status
+delivery_rating,int64,25000,0,0.0,100.0,Median / Mean (Ordinal),Discrete scale [1..5]; median preserves discrete ordinal integer rating
+delivery_cost,float64,25000,0,0.0,100.0,Median Imputation,Continuous monetary metric; median avoids distortion from high-tariff hauls
+traffic_level,str,25000,0,0.0,100.0,Mode (Categorical),Ordinal/nominal congestion; impute with modal traffic tier ('high')

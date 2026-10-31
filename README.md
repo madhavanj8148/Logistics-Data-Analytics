@@ -148,16 +148,16 @@ pip install -r requirements.txt
 | :--- | :--- | :---: |
 | **Setup & Repo Init** | Directory structure, `.gitignore`, `requirements.txt`, README | **COMPLETED** |
 | **Week 1 – Phase 1** | Project Introduction, Problem Statement, Scope & Significance | **COMPLETED** |
-| **Week 1 – Phase 2** | Project Objectives Definition & KPI Mathematical Formulas | In Progress |
-| **Week 1 – Phase 3** | Dataset Selection, Quality Profiling & Metadata Verification | Upcoming |
-| **Week 1 – Phase 4** | Key Performance Indicators (KPI) Calculations & Benchmark | Upcoming |
-| **Week 1 – Phase 5** | Technical & Environment Requirements Specification | Upcoming |
-| **Week 1 – Phase 6** | Project Timeline & Milestone Mapping | Upcoming |
-| **Week 1 Report** | Word Document Generation (`Week1_Strategic_Planning_Report.docx`) | Upcoming |
-| **Week 2 – Phase 7** | Data Collection Simulation & Data Dictionary | Upcoming |
-| **Week 2 – Phase 8** | Exploratory Data Profiling & Diagnostic Metrics | Upcoming |
-| **Week 2 – Phase 9** | Data Sanitation, Type Coercion & Duplicate Handling | Upcoming |
-| **Week 2 – Phase 10** | Missing Value Diagnostics & Statistical Imputation | Upcoming |
+| **Week 1 – Phase 2** | Project Objectives Definition & KPI Mathematical Formulas | **COMPLETED** |
+| **Week 1 – Phase 3** | Dataset Selection, Quality Profiling & Metadata Verification | **COMPLETED** |
+| **Week 1 – Phase 4** | Key Performance Indicators (KPI) Calculations & Benchmark | **COMPLETED** |
+| **Week 1 – Phase 5** | Technical & Environment Requirements Specification | **COMPLETED** |
+| **Week 1 – Phase 6** | Project Timeline & Milestone Mapping | **COMPLETED** |
+| **Week 1 Report** | Word Document Generation (`Week1_Strategic_Planning_Report.docx`) | **COMPLETED** |
+| **Week 2 – Phase 7** | Data Collection Simulation & Data Dictionary | **COMPLETED** |
+| **Week 2 – Phase 8** | Exploratory Data Profiling & Diagnostic Metrics | **COMPLETED** |
+| **Week 2 – Phase 9** | Data Sanitation, Type Coercion & Duplicate Handling | **COMPLETED** |
+| **Week 2 – Phase 10** | Missing Value Diagnostics & Statistical Imputation | **COMPLETED** |
 | **Week 2 – Phase 11** | Statistical Outlier Detection (IQR / Z-Score) & Treatment | Upcoming |
 | **Week 2 – Phase 12** | Feature Scaling (Min-Max Scaling & Standardization) | Upcoming |
 | **Week 2 – Phase 13** | Reusable Automated Preprocessing Pipeline (`src/`) | Upcoming |
@@ -168,6 +168,9 @@ pip install -r requirements.txt
 
 ## 8. Documentation Links & Deliverables
 * **Week 1 Strategic Planning Document:** `documentation/Week1_Strategic_Planning_Report.docx`
+* **Week 2 Dataset Collection Report:** `documentation/Week2_Dataset_Collection_Report.docx`
+* **Week 2 Data Cleaning Report:** `documentation/Week2_Data_Cleaning_Report.docx`
+* **Week 2 Missing Value Analysis Report:** `documentation/Week2_Missing_Value_Analysis_Report.docx`
 * **Week 2 Preprocessing & Pipeline Document:** `documentation/Week2_Data_Preprocessing_Report.docx`
 * **Final Consolidated Project Report:** `documentation/Combined_Project_Report.docx`
 * **Cleaned & Processed Dataset:** `dataset/processed/`
